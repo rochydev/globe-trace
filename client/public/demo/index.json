@@ -1,0 +1,26 @@
+[
+  {
+    "target": "github.com",
+    "file": "github.com.json",
+    "hops": 18,
+    "recordedAt": "2026-10-06T18:26:44.213Z"
+  },
+  {
+    "target": "www.u-tokyo.ac.jp",
+    "file": "www.u-tokyo.ac.jp.json",
+    "hops": 25,
+    "recordedAt": "2026-10-06T18:27:49.384Z"
+  },
+  {
+    "target": "www.usp.br",
+    "file": "www.usp.br.json",
+    "hops": 17,
+    "recordedAt": "2026-10-06T18:28:24.862Z"
+  },
+  {
+    "target": "www.anu.edu.au",
+    "file": "www.anu.edu.au.json",
+    "hops": 16,
+    "recordedAt": "2026-10-06T18:30:01.620Z"
+  }
+]

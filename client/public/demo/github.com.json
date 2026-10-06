@@ -1,0 +1,403 @@
+{
+  "target": "github.com",
+  "resolvedIp": "140.82.121.4",
+  "origin": {
+    "lat": 41.4162,
+    "lon": 2.1543,
+    "city": "Barcelona",
+    "countryCode": "ES"
+  },
+  "reached": true,
+  "durationMs": 22600,
+  "hops": [
+    {
+      "hop": 1,
+      "ip": "192.168.1.1",
+      "hostname": null,
+      "rtts": [
+        3,
+        3,
+        2
+      ],
+      "latency": 2.7,
+      "geo": null,
+      "status": "private"
+    },
+    {
+      "hop": 2,
+      "ip": "192.168.144.1",
+      "hostname": null,
+      "rtts": [
+        4,
+        5,
+        5
+      ],
+      "latency": 4.7,
+      "geo": null,
+      "status": "private"
+    },
+    {
+      "hop": 3,
+      "ip": "81.41.231.189",
+      "hostname": "189.red-81-41-231.staticip.rima-tde.net",
+      "rtts": [
+        7,
+        6,
+        7
+      ],
+      "latency": 6.7,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5158,
+        "lon": -3.66285,
+        "accuracyKm": null,
+        "isp": "RIMA (Red IP Multi Acceso)",
+        "asn": 3352,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 4,
+      "ip": "81.41.231.222",
+      "hostname": "222.red-81-41-231.staticip.rima-tde.net",
+      "rtts": [
+        44,
+        45,
+        43
+      ],
+      "latency": 44,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5158,
+        "lon": -3.66285,
+        "accuracyKm": null,
+        "isp": "RIMA (Red IP Multi Acceso)",
+        "asn": 3352,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 5,
+      "ip": "80.58.81.46",
+      "hostname": "46.red-80-58-81.staticip.rima-tde.net",
+      "rtts": [
+        51,
+        47,
+        44
+      ],
+      "latency": 47.3,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5167,
+        "lon": -3.66479,
+        "accuracyKm": null,
+        "isp": "Telefonica de Espana SAU",
+        "asn": 3352,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 6,
+      "ip": "81.46.0.81",
+      "hostname": "81.red-81-46-0.customer.static.ccgg.telefonica.net",
+      "rtts": [
+        52,
+        42,
+        38
+      ],
+      "latency": 44,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5167,
+        "lon": -3.66479,
+        "accuracyKm": null,
+        "isp": "Telefonica de Espana SAU",
+        "asn": 3352,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 7,
+      "ip": "213.140.43.109",
+      "hostname": null,
+      "rtts": [
+        53,
+        51,
+        50
+      ],
+      "latency": 51.3,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5149,
+        "lon": -3.66524,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 8,
+      "ip": "213.140.36.190",
+      "hostname": null,
+      "rtts": [
+        41,
+        40,
+        38
+      ],
+      "latency": 39.7,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5149,
+        "lon": -3.66524,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 9,
+      "ip": "176.52.252.93",
+      "hostname": null,
+      "rtts": [
+        39,
+        37,
+        33
+      ],
+      "latency": 36.3,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5147,
+        "lon": -3.66333,
+        "accuracyKm": null,
+        "isp": "Telefonica Global Solutions SL",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 10,
+      "ip": "94.103.180.23",
+      "hostname": "r2-par1-fr.as5405.net",
+      "rtts": [
+        63,
+        54,
+        54
+      ],
+      "latency": 57,
+      "geo": {
+        "city": "París",
+        "country": "Francia",
+        "countryCode": "FR",
+        "lat": 48.8566,
+        "lon": 2.3522,
+        "accuracyKm": null,
+        "isp": "Inter.link GmbH",
+        "asn": 5405,
+        "source": "hostname",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 11,
+      "ip": "94.103.180.10",
+      "hostname": "r3-fra2-de.as5405.net",
+      "rtts": [
+        53,
+        52,
+        52
+      ],
+      "latency": 52.3,
+      "geo": {
+        "city": "Fráncfort",
+        "country": "Alemania",
+        "countryCode": "DE",
+        "lat": 50.1109,
+        "lon": 8.6821,
+        "accuracyKm": null,
+        "isp": "Inter.link GmbH",
+        "asn": 5405,
+        "source": "hostname",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 12,
+      "ip": "94.103.180.89",
+      "hostname": "r5-fra3-de.as5405.net",
+      "rtts": [
+        66,
+        67,
+        66
+      ],
+      "latency": 66.3,
+      "geo": {
+        "city": "Fráncfort",
+        "country": "Alemania",
+        "countryCode": "DE",
+        "lat": 50.1109,
+        "lon": 8.6821,
+        "accuracyKm": null,
+        "isp": "Inter.link GmbH",
+        "asn": 5405,
+        "source": "hostname",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 13,
+      "ip": "94.103.180.54",
+      "hostname": "r3-fra3-de.as5405.net",
+      "rtts": [
+        75,
+        74,
+        71
+      ],
+      "latency": 73.3,
+      "geo": {
+        "city": "Fráncfort",
+        "country": "Alemania",
+        "countryCode": "DE",
+        "lat": 50.1109,
+        "lon": 8.6821,
+        "accuracyKm": null,
+        "isp": "Inter.link GmbH",
+        "asn": 5405,
+        "source": "hostname",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 14,
+      "ip": "94.103.180.53",
+      "hostname": "r2-fra3-de.as5405.net",
+      "rtts": [
+        83,
+        79,
+        76
+      ],
+      "latency": 79.3,
+      "geo": {
+        "city": "Fráncfort",
+        "country": "Alemania",
+        "countryCode": "DE",
+        "lat": 50.1109,
+        "lon": 8.6821,
+        "accuracyKm": null,
+        "isp": "Inter.link GmbH",
+        "asn": 5405,
+        "source": "hostname",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 15,
+      "ip": "45.153.82.37",
+      "hostname": null,
+      "rtts": [
+        74,
+        84,
+        85
+      ],
+      "latency": 81,
+      "geo": {
+        "city": "Francfort",
+        "country": "Alemania",
+        "countryCode": "DE",
+        "lat": 50.1169,
+        "lon": 8.6837,
+        "accuracyKm": null,
+        "isp": "Inter.link GmbH",
+        "asn": 5405,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 16,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 17,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 18,
+      "ip": "140.82.121.4",
+      "hostname": "lb-140-82-121-4-fra.github.com",
+      "rtts": [
+        80,
+        83,
+        80
+      ],
+      "latency": 81,
+      "geo": {
+        "city": "Francfort",
+        "country": "Alemania",
+        "countryCode": "DE",
+        "lat": 50.1169,
+        "lon": 8.6837,
+        "accuracyKm": null,
+        "isp": "GitHub, Inc.",
+        "asn": 36459,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    }
+  ],
+  "recordedAt": "2026-10-06T18:26:44.213Z"
+}

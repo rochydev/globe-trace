@@ -1,0 +1,344 @@
+{
+  "target": "www.anu.edu.au",
+  "resolvedIp": "130.56.67.33",
+  "origin": {
+    "lat": 41.4162,
+    "lon": 2.1543,
+    "city": "Barcelona",
+    "countryCode": "ES"
+  },
+  "reached": true,
+  "durationMs": 24149,
+  "hops": [
+    {
+      "hop": 1,
+      "ip": "192.168.1.1",
+      "hostname": null,
+      "rtts": [
+        3,
+        3,
+        4
+      ],
+      "latency": 3.3,
+      "geo": null,
+      "status": "private"
+    },
+    {
+      "hop": 2,
+      "ip": "192.168.144.1",
+      "hostname": null,
+      "rtts": [
+        4,
+        5,
+        4
+      ],
+      "latency": 4.3,
+      "geo": null,
+      "status": "private"
+    },
+    {
+      "hop": 3,
+      "ip": "81.41.231.189",
+      "hostname": "189.red-81-41-231.staticip.rima-tde.net",
+      "rtts": [
+        7,
+        6,
+        6
+      ],
+      "latency": 6.3,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5158,
+        "lon": -3.66285,
+        "accuracyKm": null,
+        "isp": "RIMA (Red IP Multi Acceso)",
+        "asn": 3352,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 4,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 5,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 6,
+      "ip": "213.140.50.218",
+      "hostname": "be8-400-grtbcnes1.net.telefonicaglobalsolutions.com",
+      "rtts": [
+        8,
+        8,
+        8
+      ],
+      "latency": 8,
+      "geo": {
+        "city": "Pozuelo de Alarcón",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.4473,
+        "lon": -3.80734,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 7,
+      "ip": "213.140.37.155",
+      "hostname": null,
+      "rtts": [
+        8,
+        8,
+        8
+      ],
+      "latency": 8,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5149,
+        "lon": -3.66524,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 8,
+      "ip": "213.140.35.37",
+      "hostname": null,
+      "rtts": [
+        18,
+        20,
+        16
+      ],
+      "latency": 18,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5149,
+        "lon": -3.66524,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 9,
+      "ip": "176.52.248.250",
+      "hostname": null,
+      "rtts": [
+        17,
+        17,
+        16
+      ],
+      "latency": 16.7,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5147,
+        "lon": -3.66333,
+        "accuracyKm": null,
+        "isp": "Telefonica Global Solutions SL",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 10,
+      "ip": "4.68.71.45",
+      "hostname": null,
+      "rtts": [
+        17,
+        17,
+        17
+      ],
+      "latency": 17,
+      "geo": {
+        "city": "Monroe",
+        "country": "Estados Unidos de América (los)",
+        "countryCode": "US",
+        "lat": 32.5891,
+        "lon": -92.0664,
+        "accuracyKm": null,
+        "isp": "Level 3 Communications, Inc.",
+        "asn": 3356,
+        "source": "db",
+        "plausible": false
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 11,
+      "ip": "171.75.8.197",
+      "hostname": "ae1.3117.ear4.lon1.neo.colt.net",
+      "rtts": [
+        37,
+        36,
+        37
+      ],
+      "latency": 36.7,
+      "geo": {
+        "city": "Londres",
+        "country": "Reino Unido",
+        "countryCode": "GB",
+        "lat": 51.5074,
+        "lon": -0.1278,
+        "accuracyKm": null,
+        "isp": "Level 3 Communications, Inc.",
+        "asn": 3356,
+        "source": "hostname",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 12,
+      "ip": "217.163.113.74",
+      "hostname": "aarnet-pty.ear4.london1.level3.net",
+      "rtts": [
+        37,
+        37,
+        37
+      ],
+      "latency": 37,
+      "geo": {
+        "city": "Londres",
+        "country": "Reino Unido de Gran Bretaña e Irlanda del Norte (el)",
+        "countryCode": "GB",
+        "lat": 51.5072,
+        "lon": -0.127586,
+        "accuracyKm": null,
+        "isp": "Level 3 Communications, Inc.",
+        "asn": 3356,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 13,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 14,
+      "ip": "138.44.172.29",
+      "hostname": null,
+      "rtts": [
+        360,
+        360,
+        360
+      ],
+      "latency": 360,
+      "geo": {
+        "city": "Canberra",
+        "country": "Australia",
+        "countryCode": "AU",
+        "lat": -35.2828,
+        "lon": 149.1283,
+        "accuracyKm": null,
+        "isp": "Australian Academic and Research Network",
+        "asn": 7575,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 15,
+      "ip": "150.203.201.33",
+      "hostname": "vlan-2100-palo.anu.edu.au",
+      "rtts": [
+        352,
+        352,
+        352
+      ],
+      "latency": 352,
+      "geo": {
+        "city": "Canberra",
+        "country": "Australia",
+        "countryCode": "AU",
+        "lat": -35.2828,
+        "lon": 149.1283,
+        "accuracyKm": null,
+        "isp": "Australian Academic and Research Network",
+        "asn": 7575,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 16,
+      "ip": "130.56.67.33",
+      "hostname": "policyforum.net",
+      "rtts": [
+        352,
+        352,
+        352
+      ],
+      "latency": 352,
+      "geo": {
+        "city": "Canberra",
+        "country": "Australia",
+        "countryCode": "AU",
+        "lat": -35.2828,
+        "lon": 149.1283,
+        "accuracyKm": null,
+        "isp": "Australian Academic and Research Network",
+        "asn": 7575,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    }
+  ],
+  "recordedAt": "2026-10-06T18:30:01.620Z"
+}
