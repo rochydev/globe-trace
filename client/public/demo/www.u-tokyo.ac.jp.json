@@ -1,0 +1,494 @@
+{
+  "target": "www.u-tokyo.ac.jp",
+  "resolvedIp": "210.152.243.234",
+  "origin": {
+    "lat": 41.4162,
+    "lon": 2.1543,
+    "city": "Barcelona",
+    "countryCode": "ES"
+  },
+  "reached": false,
+  "durationMs": 47521,
+  "hops": [
+    {
+      "hop": 1,
+      "ip": "192.168.1.1",
+      "hostname": null,
+      "rtts": [
+        3,
+        3,
+        5
+      ],
+      "latency": 3.7,
+      "geo": null,
+      "status": "private"
+    },
+    {
+      "hop": 2,
+      "ip": "192.168.144.1",
+      "hostname": null,
+      "rtts": [
+        5,
+        5,
+        4
+      ],
+      "latency": 4.7,
+      "geo": null,
+      "status": "private"
+    },
+    {
+      "hop": 3,
+      "ip": "81.41.231.185",
+      "hostname": "185.red-81-41-231.staticip.rima-tde.net",
+      "rtts": [
+        5,
+        6,
+        5
+      ],
+      "latency": 5.3,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5158,
+        "lon": -3.66285,
+        "accuracyKm": null,
+        "isp": "RIMA (Red IP Multi Acceso)",
+        "asn": 3352,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 4,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 5,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 6,
+      "ip": "213.140.50.218",
+      "hostname": "be8-400-grtbcnes1.net.telefonicaglobalsolutions.com",
+      "rtts": [
+        8,
+        11,
+        8
+      ],
+      "latency": 9,
+      "geo": {
+        "city": "Pozuelo de Alarcón",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.4473,
+        "lon": -3.80734,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 7,
+      "ip": "213.140.37.155",
+      "hostname": null,
+      "rtts": [
+        7,
+        8,
+        8
+      ],
+      "latency": 7.7,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5149,
+        "lon": -3.66524,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 8,
+      "ip": "213.140.35.37",
+      "hostname": null,
+      "rtts": [
+        16,
+        15,
+        16
+      ],
+      "latency": 15.7,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5149,
+        "lon": -3.66524,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 9,
+      "ip": "62.115.52.140",
+      "hostname": "mad-b3-link.ip.twelve99.net",
+      "rtts": [
+        null,
+        16,
+        null
+      ],
+      "latency": 16,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.4168,
+        "lon": -3.70379,
+        "accuracyKm": null,
+        "isp": "TELIANET",
+        "asn": 1299,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 10,
+      "ip": "62.115.136.217",
+      "hostname": "bcn-b1-link.ip.twelve99.net",
+      "rtts": [
+        24,
+        24,
+        25
+      ],
+      "latency": 24.3,
+      "geo": {
+        "city": "Barcelona",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 41.3874,
+        "lon": 2.16857,
+        "accuracyKm": null,
+        "isp": "TELIANET",
+        "asn": 1299,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 11,
+      "ip": "62.115.136.214",
+      "hostname": "mei-b5-link.ip.twelve99.net",
+      "rtts": [
+        22,
+        22,
+        22
+      ],
+      "latency": 22,
+      "geo": {
+        "city": "Francfort",
+        "country": "Alemania",
+        "countryCode": "DE",
+        "lat": 50.1109,
+        "lon": 8.68213,
+        "accuracyKm": null,
+        "isp": "TELIANET",
+        "asn": 1299,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 12,
+      "ip": "62.115.141.159",
+      "hostname": "sng-b6-link.ip.twelve99.net",
+      "rtts": [
+        261,
+        261,
+        259
+      ],
+      "latency": 260.3,
+      "geo": {
+        "city": "Singapur",
+        "country": "Singapur",
+        "countryCode": "SG",
+        "lat": 1.33672,
+        "lon": 103.894,
+        "accuracyKm": null,
+        "isp": "TELIANET",
+        "asn": 1299,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 13,
+      "ip": "62.115.139.45",
+      "hostname": "sng-b7-link.ip.twelve99.net",
+      "rtts": [
+        256,
+        254,
+        255
+      ],
+      "latency": 255,
+      "geo": {
+        "city": "Singapur",
+        "country": "Singapur",
+        "countryCode": "SG",
+        "lat": 1.29531,
+        "lon": 103.79,
+        "accuracyKm": null,
+        "isp": "TELIANET",
+        "asn": 1299,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 14,
+      "ip": "62.115.112.13",
+      "hostname": "osa-b2-link.ip.twelve99.net",
+      "rtts": [
+        256,
+        318,
+        255
+      ],
+      "latency": 276.3,
+      "geo": {
+        "city": "Osaka",
+        "country": "Japón",
+        "countryCode": "JP",
+        "lat": 34.6937,
+        "lon": 135.5023,
+        "accuracyKm": null,
+        "isp": "TELIANET",
+        "asn": 1299,
+        "source": "hostname",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 15,
+      "ip": "62.115.10.7",
+      "hostname": "arterianetworks-ic-379832.ip.twelve99-cust.net",
+      "rtts": [
+        259,
+        256,
+        256
+      ],
+      "latency": 257,
+      "geo": {
+        "city": "Singapur",
+        "country": "Singapur",
+        "countryCode": "SG",
+        "lat": 1.29531,
+        "lon": 103.79,
+        "accuracyKm": null,
+        "isp": "Arelion Sweden AB",
+        "asn": 1299,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 16,
+      "ip": "163.139.136.69",
+      "hostname": null,
+      "rtts": [
+        269,
+        269,
+        269
+      ],
+      "latency": 269,
+      "geo": {
+        "city": "Tokio",
+        "country": "Japón",
+        "countryCode": "JP",
+        "lat": 35.6837,
+        "lon": 139.6805,
+        "accuracyKm": null,
+        "isp": "ARTERIA Networks Corporation",
+        "asn": 2519,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 17,
+      "ip": "202.79.80.158",
+      "hostname": null,
+      "rtts": [
+        257,
+        253,
+        254
+      ],
+      "latency": 254.7,
+      "geo": {
+        "city": "Tokio",
+        "country": "Japón",
+        "countryCode": "JP",
+        "lat": 35.6837,
+        "lon": 139.6805,
+        "accuracyKm": null,
+        "isp": "ARTERIA Networks Corporation",
+        "asn": 2519,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 18,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 19,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 20,
+      "ip": "158.205.121.24",
+      "hostname": null,
+      "rtts": [
+        273,
+        273,
+        274
+      ],
+      "latency": 273.3,
+      "geo": {
+        "city": "Chiyoda City",
+        "country": "Japón",
+        "countryCode": "JP",
+        "lat": 35.6916,
+        "lon": 139.768,
+        "accuracyKm": null,
+        "isp": "IDC Frontier Inc.",
+        "asn": 4694,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 21,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 22,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 23,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 24,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 25,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    }
+  ],
+  "recordedAt": "2026-10-06T18:27:49.384Z"
+}

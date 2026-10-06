@@ -1,0 +1,313 @@
+{
+  "target": "www.usp.br",
+  "resolvedIp": "200.144.235.134",
+  "origin": {
+    "lat": 41.4162,
+    "lon": 2.1543,
+    "city": "Barcelona",
+    "countryCode": "ES"
+  },
+  "reached": false,
+  "durationMs": 35460,
+  "hops": [
+    {
+      "hop": 1,
+      "ip": "192.168.1.1",
+      "hostname": null,
+      "rtts": [
+        3,
+        2,
+        2
+      ],
+      "latency": 2.3,
+      "geo": null,
+      "status": "private"
+    },
+    {
+      "hop": 2,
+      "ip": "192.168.144.1",
+      "hostname": null,
+      "rtts": [
+        8,
+        4,
+        4
+      ],
+      "latency": 5.3,
+      "geo": null,
+      "status": "private"
+    },
+    {
+      "hop": 3,
+      "ip": "81.41.231.185",
+      "hostname": "185.red-81-41-231.staticip.rima-tde.net",
+      "rtts": [
+        6,
+        5,
+        5
+      ],
+      "latency": 5.3,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5158,
+        "lon": -3.66285,
+        "accuracyKm": null,
+        "isp": "RIMA (Red IP Multi Acceso)",
+        "asn": 3352,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 4,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 5,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 6,
+      "ip": "213.140.50.218",
+      "hostname": "be8-400-grtbcnes1.net.telefonicaglobalsolutions.com",
+      "rtts": [
+        8,
+        null,
+        7
+      ],
+      "latency": 7.5,
+      "geo": {
+        "city": "Pozuelo de Alarcón",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.4473,
+        "lon": -3.80734,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 7,
+      "ip": "213.140.43.111",
+      "hostname": null,
+      "rtts": [
+        17,
+        15,
+        15
+      ],
+      "latency": 15.7,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5149,
+        "lon": -3.66524,
+        "accuracyKm": null,
+        "isp": "Telefonica International Wholesale Network",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 8,
+      "ip": "213.140.49.80",
+      "hostname": "ae6-0-grtvirtx4.net.telefonicaglobalsolutions.com",
+      "rtts": [
+        129,
+        87,
+        85
+      ],
+      "latency": 100.3,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.4167,
+        "lon": -3.70329,
+        "accuracyKm": null,
+        "isp": "Telefonica Global Solutions SL",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 9,
+      "ip": "94.142.99.174",
+      "hostname": null,
+      "rtts": [
+        190,
+        190,
+        190
+      ],
+      "latency": 190,
+      "geo": {
+        "city": "Madrid",
+        "country": "España",
+        "countryCode": "ES",
+        "lat": 40.5156,
+        "lon": -3.66234,
+        "accuracyKm": null,
+        "isp": "Telefonica Global Solutions SL",
+        "asn": 12956,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 10,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 11,
+      "ip": "187.100.49.13",
+      "hostname": "187-100-49-13.dsl.telesp.net.br",
+      "rtts": [
+        192,
+        192,
+        191
+      ],
+      "latency": 191.7,
+      "geo": {
+        "city": "São Paulo",
+        "country": "Brasil",
+        "countryCode": "BR",
+        "lat": -23.5558,
+        "lon": -46.6396,
+        "accuracyKm": null,
+        "isp": "Vivo",
+        "asn": null,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 12,
+      "ip": "152.255.209.115",
+      "hostname": "152-255-209-115.user.vivozap.com.br",
+      "rtts": [
+        null,
+        191,
+        null
+      ],
+      "latency": 191,
+      "geo": {
+        "city": "São José do Rio Preto",
+        "country": "Brasil",
+        "countryCode": "BR",
+        "lat": -21.2922,
+        "lon": -50.3428,
+        "accuracyKm": null,
+        "isp": "Vivo",
+        "asn": null,
+        "source": "db",
+        "plausible": true
+      },
+      "status": "ok"
+    },
+    {
+      "hop": 13,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 14,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 15,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 16,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    },
+    {
+      "hop": 17,
+      "ip": null,
+      "hostname": null,
+      "rtts": [
+        null,
+        null,
+        null
+      ],
+      "latency": null,
+      "geo": null,
+      "status": "timeout"
+    }
+  ],
+  "recordedAt": "2026-10-06T18:28:24.862Z"
+}
