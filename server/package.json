@@ -1,0 +1,20 @@
+{
+  "name": "@globe-trace/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env src/index.js",
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "geo:update": "node --env-file-if-exists=.env scripts/update-geo.js",
+    "demo:record": "node scripts/record-demo.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.3.0",
+    "@fastify/rate-limit": "^11.2.0",
+    "@globe-trace/shared": "*",
+    "fastify": "^5.12.5",
+    "maxmind": "^5.0.7"
+  }
+}

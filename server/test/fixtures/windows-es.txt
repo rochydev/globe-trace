@@ -1,0 +1,14 @@
+
+Traza a 1.1.1.1 sobre caminos de 15 saltos como m ximo.
+
+  1    18 ms     3 ms     3 ms  192.168.1.1 
+  2     *        *        *     Tiempo de espera agotado para esta solicitud.
+  3     6 ms     6 ms     6 ms  81.41.231.189 
+  4    34 ms    18 ms    18 ms  81.41.231.222 
+  5    32 ms    20 ms    19 ms  81.46.7.61 
+  6    16 ms    16 ms    20 ms  216.184.113.182 
+  7     *        *       19 ms  81.173.106.39 
+  8    34 ms    26 ms    23 ms  188.114.108.23 
+  9    33 ms    17 ms    17 ms  1.1.1.1 
+
+Traza completa.

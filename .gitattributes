@@ -1,0 +1,2 @@
+# Salidas reales de tracert/traceroute: se guardan byte a byte (CRLF y CP850)
+server/test/fixtures/** -text
