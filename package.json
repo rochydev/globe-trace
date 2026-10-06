@@ -1,0 +1,25 @@
+{
+  "name": "globe-trace",
+  "private": true,
+  "description": "Traceroute real visualizado sobre un globo 3D",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w client",
+    "dev:server": "npm run dev -w server",
+    "build": "npm run build -w client",
+    "start": "npm start -w server",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=22.9"
+  },
+  "license": "MIT",
+  "author": "Roger Malgrat González"
+}
