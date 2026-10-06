@@ -1,0 +1,8 @@
+
+Traza a la direcci¢n 2606:4700:4700::1111 sobre un m ximo de 30 saltos
+
+  1     1 ms     1 ms     1 ms  2a0c:5a80:1::1
+  2     9 ms     8 ms     8 ms  2001:7f8:a0::d6a
+  3    10 ms    10 ms    10 ms  2606:4700:4700::1111
+
+Traza completa.
