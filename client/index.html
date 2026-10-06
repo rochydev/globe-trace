@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Traceroute real visualizado salto a salto sobre un globo 3D" />
+    <meta name="theme-color" content="#03050a" />
+    <title>Globe Trace</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='12' fill='none' stroke='%2322d3ee' stroke-width='2.5'/><path d='M6 20 Q16 4 26 12' fill='none' stroke='%23e879f9' stroke-width='2.5'/></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Capa 0: el globo ocupa toda la pantalla -->
+    <div id="globe" class="globe" aria-label="Globo 3D con el recorrido del trace"></div>
+    <div class="fx-vignette" aria-hidden="true"></div>
+    <div class="fx-scan" aria-hidden="true"></div>
+
+    <!-- Capa 1: interfaz HUD -->
+    <div class="app" id="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand__mark" data-icon="Radar"></span>
+          <span class="brand__name">GLOBE<span class="brand__sep">//</span>TRACE</span>
+          <span class="brand__tag mono" id="mode-tag">DEMO</span>
+          <button class="icon-btn brand__info" id="intro-open" type="button" aria-label="Acerca del proyecto">
+            <span data-icon="Info"></span>
+          </button>
+        </div>
+
+        <form class="search panel" id="search" autocomplete="off" novalidate>
+          <span class="search__prompt mono" aria-hidden="true">trace&gt;</span>
+          <input
+            id="target"
+            class="search__input mono"
+            name="target"
+            type="text"
+            spellcheck="false"
+            placeholder="dominio o IP — ej. github.com"
+            aria-label="Dominio o dirección IP de destino"
+            maxlength="253"
+          />
+          <button class="search__btn" id="search-btn" type="submit">
+            <span data-icon="Send"></span><span class="search__btn-label">Trazar</span>
+          </button>
+          <div class="search__chips" id="chips"></div>
+          <p class="search__error mono" id="search-error" role="alert"></p>
+        </form>
+
+        <div class="hud panel" id="hud">
+          <div class="hud__status" id="hud-status" data-state="idle">
+            <span class="hud__dot"></span><span class="mono" id="hud-status-text">STANDBY</span>
+          </div>
+          <div class="hud__clock mono"><span class="hud__label">UTC</span> <span id="hud-clock">--:--:--</span></div>
+        </div>
+      </header>
+
+      <aside class="side side--left">
+        <section class="stats" id="stats" aria-label="Estadísticas del trace"></section>
+        <section class="detail panel" id="detail" hidden aria-live="polite"></section>
+      </aside>
+
+      <aside class="side side--right panel" id="hops-panel" aria-label="Saltos del trace">
+        <header class="panel__head">
+          <span data-icon="Route"></span>
+          <h2>Ruta</h2>
+          <span class="panel__meta mono" id="hops-target">—</span>
+        </header>
+        <ol class="hops" id="hops"></ol>
+        <p class="hops__empty" id="hops-empty">
+          Introduce un destino para ver cómo viaja el paquete por el mundo, salto a salto.
+        </p>
+      </aside>
+
+      <footer class="telemetry mono" id="telemetry">
+        <span><i>LAT</i> <b id="tm-lat">00.000</b></span>
+        <span><i>LON</i> <b id="tm-lon">000.000</b></span>
+        <span><i>ALT</i> <b id="tm-alt">0.00</b></span>
+        <span class="telemetry__sep"></span>
+        <span><i>ORIGEN</i> <b id="tm-origin">—</b></span>
+        <span><i>DESTINO</i> <b id="tm-dest">—</b></span>
+      </footer>
+    </div>
+
+    <!-- Modal de bienvenida. <dialog> nativo: foco atrapado, Esc y accesibilidad incluidos -->
+    <dialog class="intro" id="intro" aria-labelledby="intro-title">
+      <div class="intro__card panel">
+        <p class="intro__kicker mono"><span class="intro__blip"></span>PROYECTO DE PORTFOLIO</p>
+        <h1 class="intro__title" id="intro-title">GLOBE<span>//</span>TRACE</h1>
+        <p class="intro__lead">
+          Desarrollado por <strong>Roger Malgrat González</strong> para entender —y ver— cómo viaja
+          un paquete por Internet: qué routers atraviesa, por qué países pasa y cuánto tarda en cada
+          salto.
+        </p>
+
+        <ol class="intro__steps">
+          <li>
+            <span class="intro__icon" data-icon="Keyboard" data-size="18"></span>
+            <div>
+              <strong>Escribe un destino</strong>
+              <span>Un dominio como <code class="mono">github.com</code> o una IP.</span>
+            </div>
+          </li>
+          <li>
+            <span class="intro__icon" data-icon="SquareTerminal" data-size="18"></span>
+            <div>
+              <strong>El servidor lanza un traceroute real</strong>
+              <span>
+                Envía paquetes con TTL 1, 2, 3… Cada router que descarta uno responde con un ICMP
+                <em>Time Exceeded</em> y así se delata.
+              </span>
+            </div>
+          </li>
+          <li>
+            <span class="intro__icon" data-icon="Earth" data-size="18"></span>
+            <div>
+              <strong>Cada salto se sitúa en el mapa</strong>
+              <span>Se geolocaliza su IP y se dibuja en el globo en tiempo real.</span>
+            </div>
+          </li>
+        </ol>
+
+        <p class="intro__note mono">
+          <span data-icon="Info" data-size="13"></span>
+          El trace sale desde el servidor, no desde tu navegador.
+        </p>
+
+        <div class="intro__actions">
+          <a class="intro__link mono" href="https://github.com/rochydev" target="_blank" rel="noopener noreferrer">
+            github.com/rochydev <span data-icon="ArrowUpRight" data-size="14"></span>
+          </a>
+          <button class="search__btn intro__start" id="intro-close" type="button" autofocus>
+            Empezar <span data-icon="ArrowRight"></span>
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
