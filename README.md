@@ -8,6 +8,9 @@ Escribes un dominio o una IP, el servidor lanza un `traceroute` de verdad y la w
 cómo viaja el paquete por el mundo: qué routers atraviesa, por qué países pasa y cuánto
 tarda en cada salto.
 
+[![Demo en vivo](https://img.shields.io/badge/demo-rochydev.github.io%2Fglobe--trace-22d3ee?style=for-the-badge)](https://rochydev.github.io/globe-trace/)
+[![CI](https://github.com/rochydev/globe-trace/actions/workflows/ci.yml/badge.svg)](https://github.com/rochydev/globe-trace/actions/workflows/ci.yml)
+
 ![Trace real de Barcelona a la Universidad de Tokio](docs/demo.gif)
 
 <sub>Trace real desde Barcelona hasta <code>www.u-tokyo.ac.jp</code>: Madrid → Fráncfort → Singapur → Osaka → Tokio, 25 saltos y ~27 000 km.</sub>
@@ -21,6 +24,13 @@ tarda en cada salto.
 > Un navegador no puede enviar paquetes con TTL controlado ni recibir mensajes ICMP, así que
 > la ruta que ves es la que sigue el tráfico **desde la máquina donde corre el backend**
 > hasta el destino. Si el backend está en Barcelona, todas las rutas empiezan en Barcelona.
+
+> [!NOTE]
+> **[Demo en GitHub Pages](https://rochydev.github.io/globe-trace/)**: como Pages solo sirve
+> archivos estáticos, la demo pública reproduce traces **reales grabados** desde Barcelona
+> (github.com, www.u-tokyo.ac.jp, www.usp.br y www.anu.edu.au). Para trazar cualquier destino,
+> ejecuta el proyecto en local ([puesta en marcha](#puesta-en-marcha)).
+> Enlace directo a un trace: <https://rochydev.github.io/globe-trace/?t=www.u-tokyo.ac.jp>
 
 ## Índice
 
@@ -131,6 +141,13 @@ npm start       # arranca la API
 El frontend es estático y se puede servir desde cualquier sitio (nginx, GitHub Pages…).
 Si la API está en otro dominio, compila con `VITE_API_URL=https://api.ejemplo.com npm run build`
 y añade ese origen del frontend a `CORS_ORIGINS` en el servidor.
+
+### Demo estática (GitHub Pages)
+
+`VITE_DEMO_ONLY=true npm run build` genera una versión que no intenta conectar con ninguna
+API y explica en sus textos que reproduce traces grabados. El workflow
+[`pages.yml`](.github/workflows/pages.yml) la compila y la publica en GitHub Pages en cada
+push a `main`. Para activarlo en un fork: *Settings → Pages → Source: GitHub Actions*.
 
 ### Scripts del servidor
 
