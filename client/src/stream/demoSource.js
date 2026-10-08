@@ -32,9 +32,13 @@ export function startDemoTrace(target, handlers, { speed = 1 } = {}) {
       const index = await loadDemoIndex();
       const entry = index.find((e) => e.target === target);
       if (!entry) {
+        const list = index.map((e) => e.target).join(', ');
         throw new Error(
-          `Modo demo (no hay servidor conectado): solo se pueden reproducir los traces grabados de ${index.map((e) => e.target).join(', ')}. ` +
-            'Arranca el backend con "npm run dev:server" para trazar cualquier destino.',
+          import.meta.env.VITE_DEMO_ONLY === 'true'
+            ? `Esta demo pública reproduce traces reales grabados: prueba con ${list}. ` +
+                'Para trazar cualquier destino, ejecuta el proyecto en local (instrucciones en GitHub).'
+            : `Modo demo (no hay servidor conectado): solo se pueden reproducir los traces grabados de ${list}. ` +
+                'Arranca el backend con "npm run dev:server" para trazar cualquier destino.',
         );
       }
       const res = await fetch(DEMO_BASE + entry.file);
