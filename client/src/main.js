@@ -52,7 +52,15 @@ if (!autoTarget) intro.open();
 
 // Modo real si responde el backend; ?demo en la URL fuerza los traces grabados
 // (útil para grabar el vídeo o para GitHub Pages, donde no hay servidor)
-const forceDemo = params.has('demo');
+// VITE_DEMO_ONLY se activa al compilar para GitHub Pages: allí no hay servidor,
+// así que ni siquiera se intenta conectar y los textos explican que es una demo
+const DEMO_ONLY = import.meta.env.VITE_DEMO_ONLY === 'true';
+const forceDemo = DEMO_ONLY || params.has('demo');
+
+if (DEMO_ONLY) {
+  document.getElementById('intro-note-text').textContent =
+    'Demo pública: se reproducen traces reales grabados desde un servidor en Barcelona. Para trazar cualquier destino, ejecuta el proyecto en local.';
+}
 
 function setMode(mode) {
   state.mode = mode;
